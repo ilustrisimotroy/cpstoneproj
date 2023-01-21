@@ -1,0 +1,1 @@
+@import"https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;600;700&display=swap";body,button{font-family:"Comfortaa",sans-serif}:root{--offcanvas-width: 270px}.sidebar-nav{width:var(--offcanvas-width)}@media screen and (min-width: 992px){.sidebar-nav{transform:none;visibility:visible}}

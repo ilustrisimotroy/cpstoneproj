@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;600;700&display=swap");
+body, button {
+  font-family: "Comfortaa", sans-serif;
+}
+
+:root {
+  --offcanvas-width: 300px;
+  --topNavbarHeight: 83px;
+}
+
+.sidebarNav {
+  width: var(--offcanvas-width);
+}
+.sidebar-link {
+  display: flex;
+  align-items: center;
+}
+
+.sidebar-link .right-icon {
+  display: inline-flex;
+  transition: all ease 0.30s;
+}
+
+.sidebar-link[aria-expanded="true"] .right-icon {
+  transform: rotate(180deg);
+}
+
+@media (min-width: 992px) {
+
+  body {
+    overflow: auto !important;
+  } 
+  .offcanvas-backdrop::before {
+    display: none;
+  }
+  main {
+    margin-left: var(--offcanvas-width);
+    padding: 30px;
+  }
+
+  .sidebarNav {
+    transform: none;
+    visibility: visible !important;
+    top: var(--topNavbarHeight);
+    height: calc(100% - var(--topNavbarHeight));
+  }
+}
