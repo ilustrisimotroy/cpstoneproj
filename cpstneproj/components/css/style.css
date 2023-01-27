@@ -4,12 +4,13 @@ body, button {
 }
 
 :root {
-  --offcanvas-width: 300px;
-  --topNavbarHeight: 83px;
+  --offcanvas-width: 260px;
+  --topNavbarHeight: 74px;
 }
 
 .sidebarNav {
   width: var(--offcanvas-width);
+  z-index: 1000;
 }
 .sidebar-link {
   display: flex;
