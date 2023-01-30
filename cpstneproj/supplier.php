@@ -29,6 +29,7 @@ $con = connection();
                                 <table class="table table-striped data-table" id="example" style="width: 100%;">
 
                                      <thead>
+                                        <th>Select Supplier<th>
                                         <th>Company Name</th>
                                         <th>Contact Person</th>
                                         <th>Contact Number</th>
