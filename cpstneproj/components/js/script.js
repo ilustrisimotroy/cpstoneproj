@@ -1,3 +1,4 @@
+
 $(document).ready(function () {
     $(".data-table").each(function(_, table) {
         $(table).DataTable();
@@ -20,3 +21,11 @@ $(document).ready(function () {
          'order': [[1, 'asc']]
     });
 });
+
+$(document).ready(function() {
+    $("#select").select2({
+        theme: "classic",
+        placeholder: "Select Supplier"
+    });
+});
+

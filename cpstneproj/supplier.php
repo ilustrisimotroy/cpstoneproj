@@ -1,5 +1,5 @@
 <?php
-include_once("Layouts/load.php");
+include_once("layouts/load.php");
 $con = connection();
 ?>
 
