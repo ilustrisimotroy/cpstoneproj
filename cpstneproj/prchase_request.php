@@ -31,18 +31,14 @@ $con = connection();
                                     <thead>
                                         <tr>
                                             <th> PR no. </th>
-                                            <th> Item Description</th>
                                             <th> Requested By </th>
                                             <th> Supplier </th>
-                                            <th> Status </th>
                                             <th> Requested Date </th>
                                             <th> Actions </th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td>1</td>
-                                            <td>1</td>
                                             <td>1</td>
                                             <td>1</td>
                                             <td>1</td>
