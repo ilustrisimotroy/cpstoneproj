@@ -1,5 +1,8 @@
 <!-- Add Supplier Modal -->
-
+<?php
+require_once('connections/inventoryclass.php');
+$invt->add_supplier();
+?>
 
 <div class="offcanvas offcanvas-end" style="width: 45%;" tabindex="-1" id="offcanvasRight" >
   <div class="modal-header">
@@ -13,18 +16,18 @@
   </div>
   <div class="offcanvas-body">
     <div class="row">
-      <form>
+      <form method="post">
       <div class="row pt-2">
                   <div class="col-md-6 col-sm-6 col-xs-12">
                     <div class="form-group">
                       <label for="" class="col-md-6 col-sm-6 col-xs-6 mb-2">
-                        Name
+                        Company Name
                       </label>
                       
                       <div class="col-md-12 col-sm-6 col-xs-6 mb-3">
                         <div class="form-group">
                           <div class="input-group">
-                              <input type="text" class="form-control" name="add_fname" id="add_fname">
+                              <input type="text" class="form-control" name="company_name" id="add_fname">
                               <span id="trapping"></span>
                           </div>
                         </div>
@@ -42,7 +45,7 @@
                       <div class="col-md-12 col-sm-6 col-xs-6 mb-3">
                         <div class="form-group">
                           <div class="input-group">
-                              <input type="text" class="form-control" name="add_fname" id="add_fname">
+                              <input type="text" class="form-control" name="contact_no" id="add_fname">
                               <span id="trapping"></span>
                           </div>
                         </div>
@@ -60,7 +63,7 @@
                       <div class="col-md-12 col-sm-12 col-xs-12 mb-3">
                         <div class="form-group">
                           <div class="input-group">
-                              <input type="email" class="form-control" name="add_fname" id="add_fname">
+                              <input type="email" class="form-control" name="email" id="add_fname">
                               <span id="trapping"></span>
                           </div>
                         </div>
@@ -80,7 +83,7 @@
                       <div class="col-md-12 col-sm-6 col-xs-6 mb-3">
                         <div class="form-group">
                           <div class="input-group">
-                          <select class="form-select" aria-label="Status">
+                          <select class="form-select" aria-label="Status" name="status">
                             <option value="Enabled" Selected>Enabled</option>
                             <option value="Disabled">Disabled</option>
                           </select>
@@ -101,7 +104,7 @@
                       <div class="col-md-12 col-sm-6 col-xs-6 mb-3">
                         <div class="form-group">
                           <div class="input-group">
-                              <input type="email" class="form-control" name="add_fname" id="add_fname">
+                              <input type="text" class="form-control" name="tin_number" id="add_fname">
                               <span id="trapping"></span>
                           </div>
                         </div>
@@ -109,24 +112,6 @@
 
                     </div>
                   </div>
-
-                  <!-- <div class="col-md-12 col-sm-6 col-xs-12">
-                    <div class="form-group">
-                      <label for="" class="col-md-12 col-sm-6 col-xs-12 mb-2">
-                        Shipping Address
-                      </label>
-                      
-                      <div class="col-md-12 col-sm-6 col-xs-6 mb-3">
-                        <div class="form-group">
-                          <div class="input-group">
-                            <textarea class="form-control" placeholder="Please Enter Shipping Address" id="floatingTextarea2" style="height: 100px; resize:none;"></textarea>
-                            <span id="trapping"></span>
-                          </div>
-                        </div>
-                      </div>
-
-                    </div>
-                  </div> -->
 
                   <div class="col-md-12 col-sm-6 col-xs-12">
                     <div class="form-group">
@@ -137,7 +122,7 @@
                       <div class="col-md-12 col-sm-6 col-xs-6 mb-3">
                         <div class="form-group">
                           <div class="input-group">
-                            <textarea class="form-control" placeholder="Please Enter Billing Address" id="floatingTextarea2" style="height: 100px; resize:none;"></textarea>
+                            <textarea class="form-control" name="address"  placeholder="Please Enter Billing Address" id="floatingTextarea2" style="height: 100px; resize:none;"></textarea>
                             <span id="trapping"></span>
                           </div>
                         </div>
@@ -145,19 +130,16 @@
 
                     </div>
                   </div>
-
+                  <footer class="float-end modal-footer" >
+                      <button type="submit" class="btn btn-primary" name="add" id=""> Add Supplier <i class="bi bi-save" style="padding-left: 8px;"></i> </button>
+                      <button type="submit" class="btn btn-secondary" name="" id="" data-loading-text="Loading.."> Close <i class="bi bi-x-square" style="padding-left: 8px;"></i> </button>
+                    </footer>
+                  </form>
                 </div>
               </div>
-
-
-        
-      </form>
     </div>
 
-        <footer class="float-end modal-footer" >
-            <button type="submit" class="btn btn-primary" name="" id="" data-loading-text="Loading.."> Add Supplier <i class="bi bi-save" style="padding-left: 8px;"></i> </button>
-            <button type="submit" class="btn btn-secondary" name="" id="" data-loading-text="Loading.."> Close <i class="bi bi-x-square" style="padding-left: 8px;"></i> </button>
-        </footer>
+        
   </div>
 </div>
 
