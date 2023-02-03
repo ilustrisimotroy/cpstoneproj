@@ -12,14 +12,14 @@
     <div class="row">
       <form>
       <div class="row pt-2" >
-        <div class="col-md-6 col-sm-6 col-xs-12" >
+        <div class="col-md-3 col-sm-6 col-xs-12" >
             <div class="form-group">
                 <label for="" class="col-md-6 col-sm-6 col-xs-6 mb-2">
                     PR no.
                 </label>
                       
                 <div class="col-md-12 col-sm-6 col-xs-6 mb-3">
-                    <div class="form-group">
+                    <div class="    form-group">
                         <div class="input-group">
                             <input type="text" class="form-control form-control-sm" name="" id="" >
                             <span id="trapping"></span>
@@ -29,7 +29,7 @@
             </div>
         </div>
 
-        <div class="col-md-6 col-sm-6 col-xs-12" >
+        <div class="col-md-3 col-sm-6 col-xs-12" >
             <div class="form-group">
                 <label for="" class="col-md-6 col-sm-6 col-xs-6 mb-2">
                     Supplier
@@ -50,7 +50,70 @@
             </div>
         </div>
 
-        <div class="row col-md-24 mb-5 ">
+        <div class="col-md-3 col-sm-6 col-xs-12" >
+            <div class="form-group">
+                <label for="" class="col-md-6 col-sm-6 col-xs-6 mb-2">
+                    Rqst By
+                </label>
+
+                <script>
+                    $(document).ready(function() {
+                        $("#requestedBy").select2({
+                            theme: "classic",
+                            placeholder: "Request By"
+                        });
+                    });
+                </script>
+                      
+                <div class="col-md-12 col-sm-6 col-xs-6 mb-3">
+                    <div class="form-group">
+                        <div class="input-group">
+                          <select class="form-select" id="requestedBy">
+                            <option hidden></option>
+                            <option>orange</option>
+                            <option>white</option>
+                            <option>purple</option>
+                          </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6 col-xs-12" >
+            <div class="form-group">
+                <label for="" class="col-md-6 col-sm-6 col-xs-6 mb-2">
+                    Status
+                </label>
+
+                <script>
+                    $(document).ready(function() {
+                        $("#status").select2({
+                            theme: "classic",
+                            placeholder: "Select Status"
+                        });
+                    });
+                </script>
+                      
+                <div class="col-md-12 col-sm-6 col-xs-6 mb-3">
+                    <div class="form-group">
+                        <div class="input-group">
+                          <select class="form-select" id="status">
+                            <option hidden></option>
+                            <option>orange</option>
+                            <option>white</option>
+                            <option>purple</option>
+                          </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        
+
+        <!-- <div class="row col-md-24 mb-5 "> -->
             <div class="col-md-3 col-sm-6 col-xs-12" >
                 <div class="form-group">
                     <label for="" class="col-md-6 col-sm-6 col-xs-6">
@@ -116,10 +179,29 @@
                 </div>
             </div>
 
-            <div class="col-md-3 col-sm-6 col-xs-12 mt-4 text-end" >
-                <button type="submit" class="btn btn-primary" name="" id="" data-loading-text="Loading.."> Add Item <i class="bi bi-save" style="padding-left: 8px;"></i> </button>
+
+            <div class="col-md-3 col-sm-6 col-xs-12" >
+                <div class="form-group">
+                    <label for="" class="col-md-6 col-sm-6 col-xs-6">
+                        Date
+                    </label>
+                        
+                    <div class="col-md-12 col-sm-6 col-xs-6 mt-1">
+                        <div class="form-group">
+                            <div class="input-group">
+                                <input type="date" class="form-control form-control-sm" name="" id="" >
+                                <span id="trapping"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+        <!-- </div> -->
+
+        <div class="mt-4 mb-5 text-end">
+            <button type="submit" class="btn btn-primary" name="" id="" data-loading-text="Loading.."> Add Item <i class="bi bi-save" style="padding-left: 8px;"></i> </button>
         </div>
+        
 
         
 
@@ -132,7 +214,7 @@
 
                 <div class="card">
                     <div class="card-header">
-                        P.O List
+                        List
                     </div>
                     <div class="card-body">
                         <div class="table-responsive">
