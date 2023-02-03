@@ -50,7 +50,16 @@ $con = connection();
                                             <td>1</td>
                                             <td>1</td>
                                             <td>1</td>
-                                            <td>1</td>
+                                            <td>
+                                                <button type="button" class="btn btn-success" data-bs-toggle="offcanvas" data-bs-target="#editPO" aria-controls="offcanvasRight">
+                                                    <i class="bi bi-pencil-fill"></i>
+                                                    <!-- Edit -->
+                                                </button>
+                                                <button type="button" class="btn btn-info"> 
+                                                    <i class="bi bi-binoculars-fill"></i>
+                                                    <!-- View -->
+                                                </button> 
+                                            </td>
                                         </tr>
                                     </tbody>
                                 </table>
