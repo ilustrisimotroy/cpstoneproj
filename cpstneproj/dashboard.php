@@ -127,7 +127,7 @@ $con = connection();
                 
             </div>
 
-            <div class="row">
+            <!-- <div class="row">
                 <div class="col-md-6">
                     <div class="card">
                         <div class="card-header">
@@ -209,7 +209,7 @@ $con = connection();
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
         </div>
     </main>

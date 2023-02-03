@@ -110,7 +110,7 @@
                     </div>
                   </div>
 
-                  <div class="col-md-12 col-sm-6 col-xs-12">
+                  <!-- <div class="col-md-12 col-sm-6 col-xs-12">
                     <div class="form-group">
                       <label for="" class="col-md-12 col-sm-6 col-xs-12 mb-2">
                         Shipping Address
@@ -126,12 +126,12 @@
                       </div>
 
                     </div>
-                  </div>
+                  </div> -->
 
                   <div class="col-md-12 col-sm-6 col-xs-12">
                     <div class="form-group">
                       <label for="" class="col-md-12 col-sm-6 col-xs-12 mb-2">
-                        Billing Address
+                        Address
                       </label>
                       
                       <div class="col-md-12 col-sm-6 col-xs-6 mb-3">
