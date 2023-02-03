@@ -1,6 +1,7 @@
 <?php
 include_once("layouts/load.php");
-$con = connection();
+require_once('connections/inventoryclass.php');
+$supplier = $invt->getSuppliers();
 ?>
 
     <main class="mt-5 pt-5">
@@ -56,28 +57,25 @@ $con = connection();
                                         <tr>
                                             <th style="width: 50px"></th>
                                             <th>Company Name</th>
-                                            <th>Contact Person</th>
                                             <th>Contact Number</th>
-                                            <th>Address</th>
-                                            <th>Email Address</th>
+                                            <th>Email</th>
+                                            <th>Status</th>
                                             <th style="text-align: center;">Actions</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                     <?php
-                                        $result=mysqli_query($con,"SELECT * FROM suppliers");
-                                        while($row = mysqli_fetch_array($result))
+                                       foreach($supplier as $supplier)
                                         {
-
                                     ?>
 
                                         <tr>
                                             <td style="margin-left: 100px;"> </td>
-                                            <td><?php echo $row["company_name"]; ?> </td>
-                                            <td><?php echo $row["contact_person"]; ?> </td>
-                                            <td><?php echo $row["contact_no"]; ?> </td>
-                                            <td><?php echo $row["address"]; ?> </td>
-                                            <td><?php echo $row["email"]; ?> </td>
+                                            <td><?php echo $supplier["company_name"]; ?> </td>
+                                            <td><?php echo $supplier["contact_no"]; ?> </td>
+                                            <td><?php echo $supplier["email"]; ?> </td>
+                                            <td><?php echo $supplier["status"]; ?> </td>
+                            
                                             <td style="text-align: center;">
                                                 <button type="button" class="btn btn-success">
                                                     <i class="bi bi-pencil-fill"></i>
